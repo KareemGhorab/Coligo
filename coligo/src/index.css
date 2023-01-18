@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply text-gray-700 font-sans;
+}
+
+.flex--centered {
+	@apply flex justify-center items-center;
+}
+
+.btn {
+	@apply cursor-pointer rounded
+	py-3 px-7
+	font-bold;
+}
+
+.btn-primary {
+	@apply bg-primary-200 text-white
+	hover:text-primary-200 hover:bg-slate-200;
+}
+
+.btn-secondary {
+	@apply border border-primary-200 text-primary-200
+	hover:text-white hover:bg-primary-200;
+}
+
+.backdrop {
+	@apply absolute top-0 right-0 left-0 bottom-0;
+}
+
+.card {
+	@apply bg-white rounded-lg;
+}
+
+.side-nav {
+	@apply w-60 h-full
+			bg-gradient-to-b from-primary-500 to-primary-400
+			text-white
+			py-5
+			flex flex-col items-center gap-10
+			fixed
+			md:static
+			md:w-full;
+}
