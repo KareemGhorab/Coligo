@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom"
+import { createHashRouter } from "react-router-dom"
 
 import Home from "../pages/home"
 import Dashboard from "../pages/dashboard/dashboard"
@@ -12,7 +12,7 @@ import Gradebook from "pages/dashboard/gradebook"
 import Performance from "pages/dashboard/performance"
 import Announcement from "pages/dashboard/announcement"
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
 	{
 		path: "/",
 		element: <Index />,
