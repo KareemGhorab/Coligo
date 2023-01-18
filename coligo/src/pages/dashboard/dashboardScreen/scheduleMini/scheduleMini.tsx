@@ -6,7 +6,7 @@ import ScheduleMiniItem from "./scheduleMiniItem"
 export default function ScheduleMini(props: { className?: string }) {
 	const { className } = props
 	const { data, isError, isLoading } = useFetch({
-		baseURL: "http://localhost:3001",
+		baseURL: "https://coligo.vercel.app",
 		url: "/quizzes",
 	})
 

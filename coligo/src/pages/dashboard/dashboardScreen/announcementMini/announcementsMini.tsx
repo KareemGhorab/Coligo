@@ -7,7 +7,7 @@ export default function AnnouncementsMini(props: { className?: string }) {
 	const { className } = props
 
 	const { isLoading, isError, data } = useFetch({
-		baseURL: "http://localhost:3001",
+		baseURL: "https://coligo.vercel.app",
 		url: "/announcements",
 		method: "get",
 	})

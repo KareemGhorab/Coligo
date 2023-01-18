@@ -10,7 +10,7 @@ export default function Home() {
 
 	const handleSignin = async () => {
 		setIsLoading(true)
-		const { data } = await axios.post("http://localhost:3001/users/signin")
+		const { data } = await axios.post("https://coligo.vercel.app/users/signin")
 		dispatch(signin(data.token))
 		setIsLoading(false)
 	}
