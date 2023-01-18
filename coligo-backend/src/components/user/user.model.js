@@ -7,12 +7,8 @@ const schema = new Schema({
 	},
 	image: {
 		type: String,
-		default: "account1.png",
+		default: "https://img.icons8.com/color/96/null/school-building.png",
 	},
-})
-
-schema.post("init", (doc) => {
-	doc.image = `${process.env.DOMAIN}/${doc.image}`
 })
 
 module.exports = model("user", schema)
