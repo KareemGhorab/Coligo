@@ -6,7 +6,7 @@ require("./src/db/dbCon")
 const express = require("express")
 const morgan = require("morgan")
 
-const port = process.env.PORT
+const port = process.env.PORT || 3001
 const app = express()
 //#endregion
 
